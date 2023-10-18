@@ -1,0 +1,7 @@
+<%- layout('./layouts/boilerPlate') %>
+<body>
+    <h1 class="display-4 my-3">WELCOME TO CAMPGROUNDS</h1>
+    <% for( let c of campgrounds ) { %>
+    <ul class="list-group list-unstyled"><li><a class="h5 list-group-item list-group-item-action" href="/campgrounds/<%=c._id.toString()%>"><%= c.location %></a></li></ul>
+    <% } %>
+</body>

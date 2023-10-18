@@ -1,0 +1,84 @@
+* {
+    font-family: 'Noto Sans Linear B', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    height: 90vh;
+    width: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form-inputs {
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+input {
+    width: 70vh;
+    height: 5vh;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.labels {
+    width: 85%;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.gradient-blue-purple {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+  }
+
+.border-round{
+    border-radius: 10px;
+}
+
+.white{
+    background-color: rgb(217, 224, 231);
+}
+
+.btn-padding{
+    margin-bottom: 2%;
+    padding: 2% 4%;
+}
+
+.no-border{
+    border: none;
+}
+
+.font-large{
+    font-size: large;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.btn-padding:hover{
+    transition: 1s;
+    background: grey;
+    padding: 3% 5%;
+}
+
+.width-area{
+    width: 72vh;
+}
+
+
+
+  

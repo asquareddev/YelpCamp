@@ -1,0 +1,31 @@
+<%- layout('./layouts/boilerPlate') %>
+    <div class="card p-3 mt-3 bg-light">
+        <h1>Edit the campground</h1>
+        <div class="form-group">
+            <form action="/campgrounds/<%= reqObject._id.toString() %>/?_method=PUT" method="POST">
+
+                <div class="labels h5 mb-2 mt-2">Location</div>
+                <input class="form-control form-inputs" placeholder="Location" type="text" name="location"
+                    value="<%= reqObject.location %>">
+                <div class="labels h5 mb-2 mt-2">Title</div>
+                <input class="form-control form-inputs" placeholder="Title" type="text" name="title"
+                    value="<%= reqObject.title %>">
+                <div class="labels h5 mb-2 mt-2">Price</div>
+                <input class="form-control form-inputs" placeholder="Price" type="number" name="price"
+                    value="<%= reqObject.price %>">
+                <div class="labels h5 mb-2 mt-2">Description</div>
+                <!-- <input class="form-inputs" placeholder="Description" type="text" name="desc"> -->
+                <textarea name="desc" class="form-control  form-inputs width-area" placeholder="type your review here!"
+                    cols="30" rows="8"><%= reqObject.desc %></textarea>
+                <!-- this is an empty div just to put the button the succeeding line -->
+                <div class="Empty Div"></div>
+
+                <div class="container">
+                    <button class="btn btn-success mt-3 px-3 py-2">Submit</button>
+                    <form action="/campgrounds">
+                        <button class="btn btn-warning text-white     mt-3 mx-2 px-3 py-2"> Go to Home Page</button>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>

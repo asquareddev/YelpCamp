@@ -1,0 +1,19 @@
+<%- layout('./layouts/boilerPlate') %>
+    <h1>Here are your details</h1>
+    <div class="container">
+        <ul>
+            <li>Title: <%= reqObject.title %></li>
+            <li>Price: <%= reqObject.price %></li>
+            <div class="container-fluid  d-flex justify-content-start">
+                <form action="/campgrounds/<%= reqObject._id.toString()%>?_method=DELETE" method="post">
+                    <button class="btn btn-danger mt-3 px-3 py-2">Delete</button>
+                </form>
+                <form action="/campgrounds/<%= reqObject._id.toString()%>/edit">
+                    <button class="btn btn-primary mx-3 mt-3 px-3 py-2">Edit</button>
+                </form>
+                <form action="/campgrounds">
+                    <button class="btn btn-warning text-white     mt-3 mx-2 px-3 py-2"> Go to Home Page</button>
+                </form>
+            </div>
+        </ul>
+    </div>
